@@ -1,0 +1,20 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          discord:
+            client-id: 946268589483261982
+            clientAuthenticationMethod: none
+            authorization-grant-type: authorization_code
+            scope:
+              - identify
+              - guilds
+            redirect-uri: http://localhost:8080/login/oauth2/code/discord
+            client-name: SimpleTimer-Dashboard
+        provider:
+          discord:
+            authorizationUri: https://discordapp.com/api/oauth2/authorize
+            tokenUri: https://discordapp.com/api/oauth2/token
+            userInfoUri: https://discordapp.com/api/users/@me
+            user-name-attribute: username
