@@ -44,3 +44,6 @@ node_modules/
 
 #TypeScriptからJavaScriptへコンパイルした結果
 src/main/resources/static/js
+
+#DockerComposeのファイルはデバッグでのみ使う
+docker-compose.yml

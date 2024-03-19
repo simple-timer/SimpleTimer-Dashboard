@@ -1,0 +1,12 @@
+.git/
+.github/
+.idea/
+build/
+.env
+.gitattributes
+.gitignore
+.gitmodules
+LICENSE
+README.md
+
+src/main/resources/static/js/
